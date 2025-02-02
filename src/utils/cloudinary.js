@@ -1,4 +1,4 @@
-import {vs as cloudinary} from "cloudinary"
+import {v2 as cloudinary} from "cloudinary"
 import fs from "fs"
 
     // Configuration
@@ -14,7 +14,8 @@ import fs from "fs"
          const uploadResult = await cloudinary.uploader.upload(localFilePath,{
             resource_type : "auto"
          })
-         console.log("file Uploaded Successfull", uploadResult.url);
+        // console.log("file Uploaded Successfull", uploadResult.url);
+         fs.unlinkSync(localFilePath)
          return uploadResult ;
         } catch (error) {
             fs.unlinkSync(localFilePath)  // remove the locally save temproary file as the upload opration got failed

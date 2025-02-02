@@ -1,7 +1,7 @@
-import 'dotenv/config'
+// impo       rt dotenv from "dotenv"
 import connectDB from "./db/index.js";
-import { app } from './app.js';
-// dotenv.config()
+import {app} from './app.js'
+import 'dotenv/config'
 
 connectDB()
 .then(()=>{

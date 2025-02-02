@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -r dotenv/config src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "author": "Bhupendra_Singh",
   "license": "ISC",
@@ -18,7 +18,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.9.3",
+    "mongoose": "^8.9.5",
     "mongoose-aggregate-paginate-v2": "^1.1.2",
     "multer": "^1.4.5-lts.1"
   },
